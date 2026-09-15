@@ -1,8 +1,8 @@
 const time = (course: number, time: number): void | string => {
-    const times: string =  (time/course).toFixed(1)
+    const times: string =  (time/course).toFixed(2)
     if (time < course) {
         console.log(' ')
-        console.log("You're super fast! "+(course/time).toFixed(1)+" times faster than the course")
+        console.log("You're super fast! "+(course/time).toFixed(2)+" times faster than the course")
         console.log('Course time = '+course)
         console.log('Your time = '+time)
         console.log(' ')
@@ -36,4 +36,4 @@ const time = (course: number, time: number): void | string => {
 }
 
 // enter the written time of the course and how long it took you (in hours). as in: time(course, you);
-time(2, 1.8);
+time(2.4, 4.75);
