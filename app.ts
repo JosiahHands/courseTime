@@ -1,10 +1,3 @@
-let timeArr: number[] = []
-let course: number = timeArr[0];
-const courseTime = (time: number): void => {
-    timeArr.push(time);
-}
-
-
 const time = (course: number, time: number): void | string => {
     const times: string =  (time/course).toFixed(1)
     if (time < course) {
@@ -33,7 +26,7 @@ const time = (course: number, time: number): void | string => {
         console.log(' ')
     } else if (time > course*4) {
         console.log(' ')
-        console.log("You're slow. "+times+" times times course")
+        console.log("You're slow. "+times+" times course")
         console.log('Course time = '+course)
         console.log('Your time = '+time)
         console.log(' ')
@@ -43,4 +36,4 @@ const time = (course: number, time: number): void | string => {
 }
 
 // enter the written time of the course and how long it took you (in hours). as in: time(course, you);
-time(1, 3);
+time(1, 6);
