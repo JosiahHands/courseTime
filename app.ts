@@ -26,7 +26,7 @@ const time = (course: number, time: number): void | string => {
         console.log(' ')
     } else if (time > course*4) {
         console.log(' ')
-        console.log("You're slow. "+times+" times course")
+        console.log("You're slow. "+times+" times the course")
         console.log('Course time = '+course)
         console.log('Your time = '+time)
         console.log(' ')
@@ -36,4 +36,4 @@ const time = (course: number, time: number): void | string => {
 }
 
 // enter the written time of the course and how long it took you (in hours). as in: time(course, you);
-time(1, 6);
+time(2, 1.8);
