@@ -35,5 +35,5 @@ const time = (course: number, time: number): void | string => {
     }
 }
 
-// enter the written time of the course and how long it took you (in hours). as in: time(course, you);
-time(2.4, 4.75);
+// enter the written time of the course and how long it took you (in hours or minutes). as in: time(course, you);
+time(24, 52);
